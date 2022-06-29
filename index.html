@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanav Miglani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            transition: 0.5s;
+            text-align: center;
+        }
+         body{
+            height:100vh;
+            width:100vw;
+            background: #29303f;
+            margin-top: 20px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            /* overflow: hidden; */
+        }
+        .container{
+            width:50vw;
+            height:75vh;
+            background: #1e1e1e;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container::before{
+            content :'';
+            position: absolute;
+            width: 50vw;
+            height: 90vh;
+            left: 60px;
+            top:-70px;
+            background: linear-gradient(#00e5ff , #b400fb);
+            animation:animatr 5s linear infinite;
+
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+            color: beige;
+        }
+         a{
+            color: rgb(217, 228, 236);
+
+        }
+        @keyframes animatr {
+            0%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(360deg);
+            }
+        }
+        .container::after{
+            content:'';
+            position:absolute;
+            inset: 5px;
+            background: #29303f;
+            border-radius: 18px;
+        }
+        h1 a{
+            text-decoration: none;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            font-size: 20px;
+            transition: 0.5s;
+            border-radius: 10px;
+            border:2px solid black
+
+        }
+        button:hover{
+            box-shadow: 0 0 20px rgb(223, 197, 163);
+        }
+        button a:hover{
+            letter-spacing: 2px;
+            /* transition: 0.5s; */
+        }
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+        @media (max-width : 477px){
+            .container{
+                height:85vh;
+                width:80vw;;
+            }
+            .container::before{
+                height:100vh;
+                width:100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1> <i class="fa-solid fa-person"></i> &ThinSpace; Name: Kanav Miglani</h1>
+            <h1> <i class="fa-brands fa-youtube"></i> &ThinSpace; YT: <a href="https://www.youtube.com/channel/UCu4gS8lipI5b7K0Y-b_OXjQ" target="_blank">cyfix</a></h1>
+            <h2><i class="fa-brands fa-python"></i> &ThinSpace; About Me</h2>
+            <p>I am a 15 year old self taught python programmer and am currently learning backend development </p>
+            <h3> <i class="fa-solid fa-address-card"></i> &ThinSpace; |contact|</h3>
+            <p> <i class="fa-solid fa-envelope"></i>&ThinSpace; Email: <a href="mailto:itscyfix@gmail.com">itscyfix@gmail.com</a></p>
+             <p><i class="fa-brands fa-discord"></i> &ThinSpace; Discord : cyfixstuckon404#7767 </p>  
+             <button><a href="https://github.com/itscyfix" target="_blank"> <i class="fa-brands fa-github"></i> &ThinSpace; On Github</a></button> 
+
+        </div>
+</body>
+</html>
