@@ -17,11 +17,12 @@
             text-align: center;
             overflow: auto;
             font-family: 'Baloo Tamma 2', cursive;
+            box-sizing: border-box;
         }
          body{
             height:100vh;
             width:100vw;
-            background: #56656ae0;
+            background: #505e53e0;
             margin-top: 20px;
             display: grid;
             justify-content: center;
@@ -30,7 +31,8 @@
         }
         .container{
             width:60vw;
-            height:85vh;
+            height:auto;
+            padding: 20px;
             background: #242222;
             border-radius: 20px;
             position: relative;
@@ -38,16 +40,20 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            overflow: hidden;
+           
         }
         .container::before{
             content: '';
             position: absolute;
             width: 8vw;
-            height: 151vh;
-            right: 360px;
-            top: -231px;
-            background: linear-gradient(#00e5ff , #b400fb, #e94444 , #48ec8d,#c4e62d);
+            height: 170vh;
+            right: 541px;
+            top: -427px;
+            background: linear-gradient(#00e5ff ,#b400fb, #e94444 , #48ec8d,#da7a2d ,#0fe0bd);
             animation: animatr 5s linear infinite;
+           
+
 }
 
         
@@ -57,7 +63,7 @@
             align-items: center;
             flex-direction: column;
             z-index: 1;
-            color: beige;
+            color: #ddf0f5;
         }
          a{
             color: rgb(109, 139, 168);
@@ -74,8 +80,9 @@
             content:'';
             position:absolute;
             inset: 5px;
-            background: #29303f;
+            background: #42342f;
             border-radius: 18px;
+            
         }
         h1 a{
             text-decoration: none;
@@ -84,7 +91,7 @@
             text-align: center;
         }
         button{
-            background-color: black;
+            background-color: #242020;
             font-size: 22px;
             transition: 0.5s;
             border-radius: 10px;
@@ -94,11 +101,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: 0.2s;
+            height:6vh
 
         }
         button:hover{
             box-shadow: 0 0 20px rgb(110, 152, 172);
-            transition: 1s;
+            transition: 0.3s;
         }
         button a:hover{
             letter-spacing: 3px;
