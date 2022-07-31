@@ -4,156 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanav Miglani</title>
-    <link rel="icon" href="logo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kanav Miglani - Xyfiz </title>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="logo.jpg">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Edu+TAS+Beginner&display=swap');
-        *{
-            transition: 0.5s;
-            text-align: center;
-            overflow: auto;
-            font-family: 'Baloo Tamma 2', cursive;
-            box-sizing: border-box;
-        }
-         body{
-            height:100vh;
-            width:100vw;
-            background: #505e53e0;
-            margin-top: 20px;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            /* overflow: hidden; */
-        }
-        .container{
-            width:60vw;
-            height:auto;
-            padding: 20px;
-            background: #242222;
-            border-radius: 20px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            overflow: hidden;
-           
-        }
-        .container::before{
-            content: '';
-            position: absolute;
-            width: 8vw;
-            height: 170vh;
-            right: 541px;
-            top: -427px;
-            background: linear-gradient(#00e5ff ,#b400fb, #e94444 , #48ec8d,#da7a2d ,#0fe0bd);
-            animation: animatr 5s linear infinite;
-           
-
-}
-
-        
-        .content{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            z-index: 1;
-            color: #ddf0f5;
-        }
-         a{
-            color: rgb(109, 139, 168);
-
-        }
-        @keyframes animatr {
-            0%{
-                transform: rotate(0deg);
-            }100%{
-                transform: rotate(360deg);
-            }
-        }
-        .container::after{
-            content:'';
-            position:absolute;
-            inset: 5px;
-            background: #42342f;
-            border-radius: 18px;
-            
-        }
-        h1 a{
-            text-decoration: none;
-        }
-        p{
-            text-align: center;
-        }
-        button{
-            background-color: #242020;
-            font-size: 22px;
-            transition: 0.5s;
-            border-radius: 10px;
-            border:2px solid black;
-            padding: 0.1rem 0.8rem;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: 0.2s;
-            height:6vh
-
-        }
-        button:hover{
-            box-shadow: 0 0 20px rgb(110, 152, 172);
-            transition: 0.3s;
-        }
-        button a:hover{
-            letter-spacing: 3px;
-            /* transition: 0.5s; */
-        }
-        button a {
-            color: white;
-            text-decoration: none;
-        }
-        @media (max-width : 477px){
-            .container{
-                height:85vh;
-                width:90vw;;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .container::before{
-                height:200vh;
-                width:20vw;
-                position: absolute;
-                left: 10px;;
-                bottom: 90px;
-                
-            }
-            .content{
-               
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-    </style>
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+</head> 
 <body>
     <div class="container">
-        <div class="content">
-            <h1> <i class="fa-solid fa-user-large"></i> &ThinSpace; Name: Kanav Miglani</h1>
-            <h1> <i class="fa-brands fa-youtube"></i> &ThinSpace; YT: <a href="https://www.youtube.com/channel/UCu4gS8lipI5b7K0Y-b_OXjQ" target="_blank">CYFIX</a></h1>
-            <h2><i class="fa-brands fa-python"></i> &ThinSpace; About Me</h2>
-            <p>I am a 15 year old python programmer and a frontend developer and am currently learning backend development </p>
-            <h3> <i class="fa-solid fa-address-card"></i> &ThinSpace; |&ThinSpace; CONTACT &ThinSpace;|</h3>
-            <p> <i class="fa-solid fa-envelope"></i>&ThinSpace; Email: <a href="mailto:itscyfix@gmail.com">itscyfix@gmail.com</a></p>
-             <p><i class="fa-brands fa-discord"></i> &ThinSpace; Discord : cyfixstuckon404#7767 </p>  
-             <button><a href="https://github.com/itscyfix" target="_blank"> <i class="fa-brands fa-github"></i> &ThinSpace;Github</a></button> 
-
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="main1">Ho<span>me</span> </a></li>
+                    <li><a href="contact.html"  target="_blank" id="main2">Con<span>tact</span> </a></li>
+                    <li><a href="https://github.com/itscyfix" target="_blank" id="main3">Git<span>hub</span></a></li>
+                    <li><a href="" id="main4">Hacker<span>Rank</span></a></li>
+                </ul>
+            </nav>
         </div>
+        <div class="mainarea">
+            <div class="logoimg">
+                <img src="logo.gif" alt="">
+            </div>
+            <div class="iam">
+                <h1>I<span>'m</span></h1>
+            </div>
+            <div class="typinge">
+               <span></span>
+            </div>
+            <div class="links">
+                <a href="logo.gif">Download Logo</a>
+                <a href="mailto:itscyfix@gmail.com">Make Website?</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var type = new Typed(".typinge span", {
+            strings :["Kanav Miglani" , "15 years old" , "From Punjab, India","Learing Web development!"],
+            typeSpeed :190,
+            backSpeed :200,
+            loop:true
+        })
+    </script>
 </body>
 </html>
