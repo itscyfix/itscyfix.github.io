@@ -12,6 +12,7 @@
 }
 nav{
     color: aliceblue;
+    background-color:#583333 ;
 }
 nav ul{
     display: flex;
